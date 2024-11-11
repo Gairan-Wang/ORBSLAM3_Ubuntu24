@@ -1,7 +1,10 @@
 #include "Converter.h"
 #include <Eigen/src/Core/Matrix.h>
-#include <g2o/types/sim3/sim3.h>
-#include <g2o/types/slam3d/se3quat.h>
+// #include <g2o/types/sim3/sim3.h>
+// #include <g2o/types/slam3d/se3quat.h>
+#include "Thirdparty/g2o/g2o/types/se3quat.h"
+#include "Thirdparty/g2o/g2o/types/sim3.h"
+
 #include <opencv2/core/mat.hpp>
 #include <sophus/se3.hpp>
 

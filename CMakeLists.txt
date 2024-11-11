@@ -25,15 +25,16 @@ find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(realsense2 REQUIRED)
 find_package(Sophus REQUIRED)
-find_package(G2O REQUIRED)
+# find_package(G2O REQUIRED)
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
 ${PROJECT_SOURCE_DIR}/include
 ${PROJECT_SOURCE_DIR}/include/Camera
 ${PROJECT_SOURCE_DIR}/include/DUtils
+# ${PROJECT_SOURCE_DIR}/Thirdparty/g2o
 ${Sophus_INCLUDE_DIRS}
-${G2O_INCLUDE_DIR}
+# ${G2O_INCLUDE_DIR}
 ${EIGEN3_INCLUDE_DIR}
 ${Pangolin_INCLUDE_DIRS}
 ${OpenCV_INCLUDE_DIRS}
@@ -79,15 +80,16 @@ target_link_libraries(${PROJECT_NAME}
     ${OpenCV_LIBS}
     ${Pangolin_LIBRARIES}
     ${EIEGN3_LIBS}
-    /usr/local/lib/libg2o_core.so 
-    /usr/local/lib/libg2o_solver_eigen.so 
-    /usr/local/lib/libg2o_solver_dense.so 
-    /usr/local/lib/libg2o_types_sim3.so 
-    /usr/local/lib/libg2o_types_sba.so
-    /usr/local/lib/libg2o_csparse_extension.so
-    /usr/local/lib/libg2o_types_slam3d.so
-    /usr/local/lib/libg2o_opengl_helper.so
+   #  /usr/local/lib/libg2o_core.so 
+   #  /usr/local/lib/libg2o_solver_eigen.so 
+   #  /usr/local/lib/libg2o_solver_dense.so 
+   #  /usr/local/lib/libg2o_types_sim3.so 
+   #  /usr/local/lib/libg2o_types_sba.so
+   #  /usr/local/lib/libg2o_csparse_extension.so
+   #  /usr/local/lib/libg2o_types_slam3d.so
+   #  /usr/local/lib/libg2o_opengl_helper.so
     /usr/local/lib/libDBoW2.so
+   ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
     /usr/lib/x86_64-linux-gnu/libboost_serialization.so 
     /usr/lib/x86_64-linux-gnu/libboost_wserialization.so 
     /usr/lib/x86_64-linux-gnu/libboost_filesystem.so 

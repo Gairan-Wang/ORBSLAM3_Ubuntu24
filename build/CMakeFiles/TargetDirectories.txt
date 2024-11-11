@@ -1,0 +1,4 @@
+/home/wgr/my_doc/myslam/my_repositories/tmp1/build/CMakeFiles/my_orb.dir
+/home/wgr/my_doc/myslam/my_repositories/tmp1/build/CMakeFiles/stereo_inertial_euroc.dir
+/home/wgr/my_doc/myslam/my_repositories/tmp1/build/CMakeFiles/edit_cache.dir
+/home/wgr/my_doc/myslam/my_repositories/tmp1/build/CMakeFiles/rebuild_cache.dir

@@ -4,8 +4,10 @@
 #include <opencv2/core/core.hpp>
 
 #include <Eigen/Dense>
-#include <g2o/types/sba/types_six_dof_expmap.h>
-#include <g2o/types/sim3/types_seven_dof_expmap.h>
+// #include <g2o/types/sba/types_six_dof_expmap.h>
+// #include <g2o/types/sim3/types_seven_dof_expmap.h>
+#include "Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
+#include "Thirdparty/g2o/g2o/types/types_six_dof_expmap.h"
 
 #include <sophus/geometry.hpp>
 #include <sophus/sim3.hpp>
